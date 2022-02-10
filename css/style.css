@@ -1,16 +1,19 @@
 *{
     font-family: 'Courier New', Courier, monospace;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
 }
 body{
     background-color: #313131;
 }
 h1{
     text-align: center;
-    color: aqua;
+    color: #00ffff;
 }
 img{
     cursor: pointer;
-    width: 10%;
+    width: 150px;
     transition: all 0.5s;
 }
 img:hover{
@@ -21,15 +24,39 @@ section.row-imgs{
     align-items: center;
     justify-content: space-around;
 }
-section.inputs{
+.modal{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
-    display:none
+    align-items: center;
+    display: none;
+    backdrop-filter: blur(5px);
+    background-color: #242424a1;
 }
-section.inputs>input{
-    margin-left: 50px;
+.modal-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: #313131;
+
+}
+.modal-container h2{
+    color: #00ffff;
+}
+#close-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: #fff;
 }
 input{
+    outline: none;
     padding: 10px;
     background-color: #C4C4C4;
-    border: 4px solid aqua;
+    border: 4px solid #000000;
 }
